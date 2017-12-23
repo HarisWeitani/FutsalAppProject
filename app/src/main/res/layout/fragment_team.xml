@@ -4,7 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:paddingTop="16dp"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,9 +20,47 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Team A"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VS"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Team B"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        >
+        <TextView
+            android:id="@+id/tv_playerNameA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
             android:textSize="30sp"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
+            android:paddingTop="10dp"
             />
 
         <View
@@ -27,13 +70,15 @@
             />
 
         <TextView
+            android:id="@+id/tv_playerNameB"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Team B"
+            android:text=""
             android:textSize="30sp"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
+            android:paddingTop="10dp"
             />
     </LinearLayout>
 
@@ -41,7 +86,10 @@
         android:id="@+id/btnTeamTesting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="testing"
+        android:text="Generate Team"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
         />
 
 </LinearLayout>
