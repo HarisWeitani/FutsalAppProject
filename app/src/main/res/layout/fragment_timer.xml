@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
 
     <TextView
+        android:id="@+id/txtTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Timer Fragment"
         android:textSize="30sp"
         android:textColor="@color/colorPrimaryDark"
         />
@@ -19,4 +22,4 @@
         android:text="button"
         />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
